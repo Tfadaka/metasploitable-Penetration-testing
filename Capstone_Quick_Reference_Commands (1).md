@@ -9,7 +9,7 @@
 - [Phase 5: Data Exfiltration](#phase-5-data-exfiltration)
 - [Phase 6: Persistence](#phase-6-persistence)
 - [Useful Utilities](#useful-utilities)
-- [Reporting and Documentation](#REPORTING-&-DOCUMENTATION)
+- [Reporting and Documentation](#reporting-&-documentation)
 
 ---
 
