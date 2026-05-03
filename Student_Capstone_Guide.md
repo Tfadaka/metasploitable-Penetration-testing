@@ -20,37 +20,6 @@ let's get the hacking started
 
 ---
 
-```bash
-# Open terminal on Kali and verify:
-
-# 1. Can you ping Metasploitable?
-ping -c 2 192.168.1.101
-
-# Expected: 2 packets sent, 2 received ✓
-
-# 2. Can you SSH to Metasploitable?
-ssh msfadmin@192.168.1.101
-# Password: msfadmin
-# Then type: exit
-
-# Expected: SSH prompt appears and works ✓
-
-# 3. Check key tools
-nmap --version          # Should show version ✓
-msfconsole --version    # Should show version ✓
-
-# 4. Create your working directory
-mkdir ~/capstone_project
-cd ~/capstone_project
-mkdir reconnaissance scanning exploitation privesc data_exfil reports
-
-echo "Project started: $(date)" > project_log.txt
-```
-
-**All checks pass?** Great! You're ready. ✓
-
----
-
 ## WHAT YOU'LL LEARN
 
 By the end of this project, you will understand:
@@ -310,36 +279,6 @@ to root access. Full report available upon request."
 ```
 
 --
-## RESOURCES & CHEAT SHEETS
-
-### Command Cheat Sheet
-
-**Nmap:**
-```bash
-nmap -sV 192.168.1.101              # Service detection
-nmap -A -T4 192.168.1.101           # Aggressive scan
-nmap -p- 192.168.1.101              # All ports
-nmap --script vuln 192.168.1.101    # Vulnerability scripts
-```
-
-**Metasploit:**
-```bash
-msfconsole                           # Start
-search [keyword]                     # Find exploits
-use [exploit]                        # Select exploit
-show options                         # View settings
-set [option] [value]                 # Set parameter
-exploit                              # Run exploit
-```
-
-**SSH / Database:**
-```bash
-ssh user@host                        # Connect via SSH
-mysql -h host -u user -p [pass]     # Connect to MySQL
-psql -h host -U user                # Connect to PostgreSQL
-```
-
----
 
 ### Learning Resources
 
@@ -356,42 +295,6 @@ psql -h host -U user                # Connect to PostgreSQL
 - CEH Exam Guide (if you want certification)
 
 ---
-
-## FINAL CHECKLIST
-
-**Before You Submit:**
-
-**Technical Deliverables:**
-- [ ] Reconnaissance report completed
-- [ ] Vulnerability scan exported from Nessus
-- [ ] At least 5 vulnerabilities successfully exploited
-- [ ] Privilege escalation demonstrated
-- [ ] Data exfiltration completed
-- [ ] Screenshots for each phase
-- [ ] Command logs documented
-
-**Report Deliverables:**
-- [ ] Executive Summary (2-3 pages)
-- [ ] Technical Report (20+ pages with details)
-- [ ] 8-Slide Presentation
-- [ ] Evidence folder organized
-- [ ] README explaining everything
-
-**Presentation Quality:**
-- [ ] No spelling/grammar errors
-- [ ] Professional formatting
-- [ ] Proper file naming
-- [ ] All evidence included
-- [ ] Clear explanations
-
-**Personal Preparation:**
-- [ ] You can explain what you did
-- [ ] You understand each vulnerability
-- [ ] You can defend your methodology
-- [ ] You're ready for questions
-
----
-
 **Remember:**
 
 **Every step might feel hard in the moment, but each one teaches you something real that most people will never know.**
