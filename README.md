@@ -1,2 +1,2 @@
 # metasploitable-Penetration-testing
-This respository stores information on Hacking the metasploitable 2 machine as a capstone cybersecurity project and everything in this repository is strictly mainly for educational purposes, anything else apart from that I will not be held accountable for that, do not test systems you do not own or have explicit written permission to test.
+This respository stores information on Hacking the metasploitable 2 machine as a capstone cybersecurity project and everything in this repository is strictly mainly for educational purposes,Unauthorized usage is strictly prohibited, anything else apart from that I will not be held accountable for that, do not test systems you do not own or have explicit written permission to test.
