@@ -939,7 +939,7 @@ cat reports/EXECUTIVE_SUMMARY.txt
 ```bash
 cat > reports/TECHNICAL_REPORT.txt << 'EOF'
 ═════════════════════════════════════════════════════════════
-DETAILED TECHNICAL ASSESSMENT REPORT
+DETAILED TECHNICAL ASSESSMENT REPORT 
 ═════════════════════════════════════════════════════════════
 
 TABLE OF CONTENTS:
@@ -957,13 +957,19 @@ TABLE OF CONTENTS:
 
 Target Systems:
 ├─ Metasploitable Linux (192.168.1.101)
-├─ OWASP Juice Shop (192.168.1.102)
+├─ DVWA Web-application
 └─ Supporting Infrastructure
 
-Assessment Type: Full-scope penetration test
-Duration: 5 days
-Tools Used: Nessus, Nmap, Metasploit, Burp Suite, OWASP ZAP
-
+Assessment Type: Grey-box
+Start date: "2026-05-01"
+End date: "2026-05-08"
+Tools Used:
+tool_name: "Nessus"
+version: "2.54",
+tool_name: "Nmap"
+version: "2.54",
+tool_name: "Metasploit"
+version: "2.54",
 ────────────────────────────────────────────────────────────
 
 2. ASSESSMENT METHODOLOGY
@@ -999,14 +1005,18 @@ Phase 4: Post-Exploitation
 [DETAILED SECTION FOR EACH VULNERABILITY]
 
 Vulnerability #1: Samba CVE-2007-6015
-Service: Samba 3.0.20
+Service: "Samba 3.0.20"
 Port: 139/445
 CVSS: 9.8
 Severity: CRITICAL
+Status: "unresolved"
 
 Description:
 The is_known_pipename function in Samba does not properly
 validate pipe names, allowing remote code execution.
+
+Refrences:
+1.Exploit Database
 
 Proof of Concept:
 1. Identified Samba 3.0.20 via nmap service detection
@@ -1025,6 +1035,7 @@ Remediation:
 - Upgrade Samba to latest version (4.x)
 - Alternative: Disable SMB if not required
 - Timeline: Immediate (within 24 hours)
+
 
 ────────────────────────────────────────────────────────────
 
